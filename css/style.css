@@ -5772,7 +5772,7 @@ a.thumbnail-classic-title:hover {
 }
 
 .bg-gray-darkest {
-	background: url('/images/about.jpg');
+	background-image: url('images/about.jpg');
 	/*background-color: #111111;*/
 	/*color: #888;*/
 }
