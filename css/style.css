@@ -5772,7 +5772,7 @@ a.thumbnail-classic-title:hover {
 }
 
 .bg-gray-darkest {
-	background-image: url('images/about.jpg');
+	background-image: url('../images/about.jpg');
 	/*background-color: #111111;*/
 	/*color: #888;*/
 }
@@ -9070,7 +9070,7 @@ h4 + .owl-carousel {
 	transform: translateX(-50%);
 	width: 102vw;
 	/*background:  #1F2845;*/
-	background: url('/images/about.jpg');
+	background: url('../images/about.jpg');
 	z-index: -1;
 }
 
@@ -13919,7 +13919,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 
 #offer svg {
-	max-width: 220px;;
+	max-width: 160px;;
 }
 #offer svg:hover .cls-1  { 
     stroke: grey;    
