@@ -2897,7 +2897,7 @@ a.thumbnail-classic-title:hover {
 	justify-content: center;
 	padding: 15px;
 	/*background-color: rgba(128, 222, 234, 0.6);*/
-	background-color: #fd4040;
+	/*background-color: #fd4040;*/
 	transition: 250ms ease-in-out;
 }
 
@@ -18490,7 +18490,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 }
 
 .cssload-container .dot {
-	background: #80deea;
+	background: #fd4040;
 	border-radius: 50%;
 	display: inline-block;
 	margin-right: 20px;
