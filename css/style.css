@@ -9846,7 +9846,7 @@ h4 + .owl-carousel {
 .rd-navbar-static .rd-navbar-inner > *,
 .rd-navbar-static .rd-navbar-top-panel__content-top > *,
 .rd-navbar-static .rd-navbar-top-panel__content-bottom > * {
-	padding: 0 25px;
+	/*padding: 0 25px;*/
 }
 
 .rd-navbar-static .rd-navbar-inner > *:first-child,
@@ -10598,7 +10598,7 @@ h4 + .owl-carousel {
 
 .rd-navbar-fixed .rd-navbar-nav {
 	display: block;
-	margin: 20px 0;
+	margin: 29px 0;
 	height: auto;
 	font-size: 16px;
 	line-height: 26px;
@@ -10833,7 +10833,7 @@ h4 + .owl-carousel {
 
 .rd-navbar-fixed .rd-navbar-top-panel__content {
 	position: fixed;
-	top: 55px;
+	top: 84px;
 	right: 0;
 	z-index: 1001;
 	width: auto;
