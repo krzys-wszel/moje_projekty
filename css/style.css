@@ -100,8 +100,7 @@ body {
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: subpixel-antialiased;
 	font-size: 14px;
-	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: 1.625;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;	line-height: 1.625;
 	font-weight: 400;
 	color: #41516A;
 }
@@ -126,6 +125,7 @@ a:hover, a:focus {
 	color: #fd4040;
 	text-decoration: none;
 }
+
 
 a[href*='callto'], a[href*='mailto'] {
 	white-space: nowrap;
@@ -164,7 +164,7 @@ h1 a, h1 a:active, h1 a:focus, h2 a, h2 a:active, h2 a:focus, h3 a, h3 a:active,
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, .heading-1 a:hover, .heading-2 a:hover, .heading-3 a:hover, .heading-4 a:hover, .heading-5 a:hover, .heading-6 a:hover {
-	color: #80deea;
+	color: #fd4040;
 }
 
 h1 > *, h2 > *, h3 > *, h4 > *, h5 > *, h6 > *, .heading-1 > *, .heading-2 > *, .heading-3 > *, .heading-4 > *, .heading-5 > *, .heading-6 > * {
@@ -702,6 +702,19 @@ h2 .label {
 .link-primary:hover {
 	color: #000;
 }
+@media (max-width: 992px) {
+	a, a:active, a:focus {
+		/*color: #80deea;*/
+		color: black;
+	}
+	.page a.icon-gray-darker {
+		color: black;
+		padding-left: 18px;
+		padding-top: 15px;
+	}
+}
+
+
 
 @media (min-width: 992px) {
 	.desktop .link-image {
@@ -783,14 +796,14 @@ span.button {
 .page .button-black {
 	color: #fff;
 	background-color: #fd4040;
-	border-color: #lightgray;
+	border-color: lightgray;
 	border-radius: 50px;
 }
 
 .page .button-black:hover, .page .button-black:focus, .page .button-black:active, .page .button-black:hover {
 	color: #fff;
 	background-color:lightgray;
-	border-color:lightgray;
+	border-color:#fd4040;
 }
 
 .page .button-gray-dark {
@@ -2256,7 +2269,12 @@ figure img {
 	display: block;
 	width: 100%;
 }
-
+@media (max-width: 767px) {
+	figure img {
+		display: block;
+		width: 50%;
+	}
+}
 .figure-inline img {
 	width: auto;
 }
@@ -2290,6 +2308,11 @@ figure img {
 
 .thumb__title a:hover {
 	color: #80deea;
+}
+.blurb-row {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .thumb__subtitle {
@@ -2879,11 +2902,13 @@ a.thumbnail-classic-title:hover {
 	top: 18px;
 	left: 18px;
 	padding: 2px 7px;
-	font-size: 12px;
+	font-size: 16px;
 	font-style: italic;
 	background-color: #fff;
 	border-radius: 4px;
 	color: #000;
+	width: 50px;
+	height: 30px;
 }
 
 .img-thumbnail-variant-3 .caption {
@@ -2897,7 +2922,7 @@ a.thumbnail-classic-title:hover {
 	justify-content: center;
 	padding: 15px;
 	/*background-color: rgba(128, 222, 234, 0.6);*/
-	/*background-color: #fd4040;*/
+	background-color: #fd4040;
 	transition: 250ms ease-in-out;
 }
 
@@ -2920,7 +2945,7 @@ a.thumbnail-classic-title:hover {
 
 @media (min-width: 1200px) {
 	.img-thumbnail-variant-3 .icon {
-		font-size: 40px;
+		font-size: 55px;
 	}
 	.img-thumbnail-variant-3 .caption {
 		padding: 50px 55px 45px;
@@ -2972,7 +2997,7 @@ a.thumbnail-classic-title:hover {
 }
 
 .desktop .img-thumbnail-variant-3:hover .caption {
-	opacity: 1;
+	opacity: 0.3;
 	transform: scale(1);
 }
 
@@ -3224,7 +3249,7 @@ a.thumbnail-classic-title:hover {
 	width: auto;
 	margin-left: auto;
 	margin-right: auto;
-	fill: #80deea;
+	fill: #fd4040;
 }
 
 .quote-default__image img {
@@ -5531,7 +5556,7 @@ a.thumbnail-classic-title:hover {
 }
 
 .context-dark .box-counter, .bg-accent .box-counter, .bg-gray-dark .box-counter, .bg-black .box-counter, .bg-gray-darker .box-counter, .bg-gray-darkest .box-counter, .bg-image-4 .box-counter, .bg-image-6 .box-counter, .bg-image-7 .box-counter, .bg-image-8 .box-counter {
-	color: #80deea;
+	color: #fd4040;
 }
 
 .context-dark .box-counter__title, .bg-accent .box-counter__title, .bg-gray-dark .box-counter__title, .bg-black .box-counter__title, .bg-gray-darker .box-counter__title, .bg-gray-darkest .box-counter__title, .bg-image-4 .box-counter__title, .bg-image-6 .box-counter__title, .bg-image-7 .box-counter__title, .bg-image-8 .box-counter__title,
@@ -5685,14 +5710,14 @@ a.thumbnail-classic-title:hover {
 .bg-accent .button-primary {
 	color: #fff;
 	background-color: #fd4040;
-	border-color: #fd4040;
+	border-color: lightgray;
 	border-radius: 50px
 }
 
 .bg-accent .button-primary:hover, .bg-accent .button-primary:focus, .bg-accent .button-primary:active, .bg-accent .button-primary:hover {
 	color: #fff;
 	background-color: lightgray;
-	border-color: lightgray;
+	border-color: #fd4040;
 }
 
 .bg-accent .button-black {
@@ -6627,6 +6652,7 @@ html .row-20 > * {
 
 html .row-30 {
 	margin-bottom: -30px;
+	text-align: -webkit-center;
 }
 
 html .row-30:empty {
@@ -8442,6 +8468,7 @@ h4 + .owl-carousel {
 	border: none;
 	cursor: pointer;
 	display: none;
+	top: 15px;
 }
 
 .rd-navbar-toggle span {
@@ -9106,7 +9133,7 @@ h4 + .owl-carousel {
 .rd-navbar-static .rd-navbar-top-panel-dark::before,
 .rd-navbar-sidebar .rd-navbar-top-panel-dark::before {
 	/*background: #1F2845;*/
-	background: url('/images/about.jpg');
+	/*background: url('/images/about.jpg');*/
 }
 
 .ie-10 .rd-navbar-static .rd-navbar-top-panel__content > *,
@@ -10483,7 +10510,7 @@ h4 + .owl-carousel {
 	height: 24px;
 	width: auto;
 	position: absolute;
-	top: 14px;
+	top: 29px;
 }
 
 .rd-navbar-fixed .rd-navbar-panel {
@@ -10495,7 +10522,7 @@ h4 + .owl-carousel {
 	top: 0;
 	right: 0;
 	padding: 4px;
-	height: 56px;
+	height: 85px;
 	z-index: 999;
 	border-bottom: 1px solid #ececee;
 }
@@ -10899,7 +10926,7 @@ h4 + .owl-carousel {
 
 .rd-navbar-fixed [class*='rd-navbar-fixed__element'] {
 	position: fixed;
-	top: 0;
+	top: 15px;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
@@ -13943,7 +13970,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
     stroke: white;
 }
 
-
+@media (max-width: 767px) {
+	#offer svg {
+		max-width: 100px;
+	}
+}
 
 
 
@@ -18757,7 +18788,7 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 	top: 50%;
 	right: 0;
 	font: 400 24px/24px "Linearicons";
-	color: #80deea;
+	color: #fd4040;
 	transform: translateY(-50%) rotate(0deg);
 	transition: .35s all ease-in-out;
 }
