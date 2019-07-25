@@ -2,7 +2,9 @@
   "useSmtp": false,
   "host": "stmp.gmail.com",              
   "port": 465,													 
-  "username": "demo@gmail.com",					 
-  "password": "demopassword",						 
-  "recipientEmail":  "demo@gmail.com"		 
+  "username": "krzys_wszel@interia.eu",					 
+  "password": "password",	
+  //"password": "demopassword",						 
+  //"recipientEmail":  "demo@gmail.com",
+  "recipientEmail":  "krzys_wszel@interia.eu"			 
 }

@@ -10849,7 +10849,9 @@ h4 + .owl-carousel {
 	border: 1px solid #ececee;
 	text-align: left;
 }
-
+.blurb-circle__icon .icon:hover {
+	color: #fd4040;
+}
 .rd-navbar-fixed .rd-navbar-top-panel__content > * + * {
 	margin-top: 10px;
 }
