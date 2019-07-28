@@ -11,16 +11,6 @@
   <meta charset="utf-8">
 
 
-  <meta property="og:url" content="index.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Krzysztof Wszelaki / Front-End Developer">
-  <meta property="og:description"
-      content="Strona internetowa Krzysztofa Wszelakiego Front-End Developera, freelancera z okolic Wrocławia.  ">
-  <meta property="og:image" content="images/glowna.jpg">
-
-  
-
-
 
   <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
   <!-- Stylesheets-->
@@ -146,13 +136,15 @@
                 <ul class="rd-navbar-nav">
                   <li class="active"><a href="#main">Główna</a>
                   </li>
-                  <li><a href="about.html">O nas</a>
+                  <li><a href="#about">O nas</a>
                   </li>
                   <li><a href="#offer">Oferta</a>
                   </li>
+                  <li><a href="#testimontial">Opinie</a>
+                  </li>
                   <li><a href="#gallery">Portfolio</a>
                   </li>
-                  <li><a href="contacts.html">Dopasuj ofertę</a>
+                  <li><a href="#contact">Kontakt</a>
                   </li>
                 </ul>
               </div>
@@ -162,7 +154,7 @@
       </div>
     </header>
     <!-- Swiper-->
-    <svg class="defs">
+    <!-- <svg class="defs">
       <defs>
         <lineargradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="50%" stop-color="#fd4040">
@@ -176,23 +168,18 @@
           </stop>
         </lineargradient>
       </defs>
-    </svg>
-    <div class="swiper-container swiper-slider" data-effect="frame-trapeze" data-loop="true" data-autoplay="3200"
-      data-speed="1200" data-mousewheel="false" data-keyboard="true" data-frame-fill="url(#gradient1)" id="main">
+    </svg> -->
+    <div class="swiper-container swiper-slider"     id="main">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="swiper-slide-img" style="background-image: url(images/glowna.jpg);"
-            data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }">
-          </div>
+          <div class="swiper-slide-img"> </div>
+          <!-- <div class="swiper-slide-img" style="background-image: url(images/glowna.jpg); z-index: -1;"> </div> -->
           <div class="swiper-slide-caption text-center context-dark">
-            <!-- <h1
+             <!-- <h1
               data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
-              Element</h1> -->
-            <h3
-              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 600 }">
-              stworzymy twoja wymarzoną stronę</h3>
-            <div class="group-lg group-middle"
-              data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 700 }">
+              Element</h1>   -->
+            <h3> stworzymy twoja wymarzoną stronę</h3>
+            <div class="group-lg group-middle">
               <a class="button button-primary button-shadow" href="#offer" ">Oferta</a>
               <a class=" button button-black button-shadow" href="#about">o nas</a></div>
           </div>
@@ -210,7 +197,8 @@
               template</a>
           </div>
         </div> -->
-        <div class="swiper-slide">
+
+        <!-- <div class="swiper-slide">
           <div class="swiper-slide-img" style="background-image: url('images/glowna.jpg');"
             data-swiper-anime="{ &quot;animation&quot;: &quot;swiperSlideRotate&quot;, &quot;duration&quot;: 2000, &quot;delay&quot;: 600 }">
           </div>
@@ -230,11 +218,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
+
       </div>
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div>
       <div class="swiper-button-prev linear-icon-chevron-left"></div>
-      <div class="swiper-button-next linear-icon-chevron-right"></div>
+      <div class="swiper-button-next linear-icon-chevron-right"></div> -->
     </div>
     <!-- <section class="section-xs section-cta bg-gray-dark text-center text-md-left">
       <div class="container">
@@ -273,7 +262,7 @@
                       </div>
                       <div class="unit-body">
                         <p class="blurb__title heading-6"><a href="#">Lubimy wyzwania</a></p>
-                        <p>Stworzymy wymarzoną stronę, nie ma dla nas rzeczy niemożliwej</p>
+                        <p>Stworzymy wymarzoną stronę, nie ma dla nas rzeczy niemożliwych</p>
                       </div>
                     </div>
                   </article>
@@ -287,8 +276,7 @@
                       </div>
                       <div class="unit-body">
                         <p class="blurb__title heading-6"><a href="#">Zespół expertów</a></p>
-                        <p>Jesteśmy zespołem wyspecjalizowanych specjalistów ds. Projektowania stron internetowych i
-                          grafik.</p>
+                        <p>Jesteśmy zespołem specjalistów ds. web&design.</p>
                       </div>
                     </div>
                   </article>
@@ -308,7 +296,7 @@
                   <!-- Linear progress bar-->
                   <div class="progress-linear progress-linear-modern">
                     <div class="progress-header">
-                      <p>Doświadczenie</p><span class="progress-value">69</span>
+                      <p>Doświadczenie</p><span class="progress-value">90</span>
                     </div>
                     <div class="progress-bar-linear-wrap">
                       <div class="progress-bar-linear"></div>
@@ -350,8 +338,8 @@
         </div>
         <div class="row row-50">
           <div class="col-6 col-md-6 col-lg-4"> -->
-            <!-- Blurb circle-->
-            <!-- <article class="blurb blurb-circle blurb-circle_centered">
+    <!-- Blurb circle-->
+    <!-- <article class="blurb blurb-circle blurb-circle_centered">
               <div class="blurb-circle__icon">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220.51 220.51" width="220px" height="220px">
                   <defs>
@@ -385,19 +373,19 @@
             </article>
           </div>
           <div class="col-6 col-md-6 col-lg-4"> -->
-            <!-- Blurb circle-->
-          
+    <!-- Blurb circle-->
 
 
 
-              <!-- </div>
+
+    <!-- </div>
               <p class="blurb__title">strony internetowe</p>
               <p>proste, szybkie w pełni responsywne i przygotowane pod wszyskie urządzenia</p>
             </article>
           </div>
           <div class="col-6 col-md-6 col-lg-4"> -->
-            <!-- Blurb circle-->
-            <!-- <article class="blurb blurb-circle blurb-circle_centered">
+    <!-- Blurb circle-->
+    <!-- <article class="blurb blurb-circle blurb-circle_centered">
               <div class="blurb-circle__icon">
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220.51 220.51">
@@ -455,8 +443,8 @@
             </article>
           </div>
           <div class="col-6 col-md-6 col-lg-4"> -->
-            <!-- Blurb circle-->
-            <!-- <article class="blurb blurb-circle blurb-circle_centered">
+    <!-- Blurb circle-->
+    <!-- <article class="blurb blurb-circle blurb-circle_centered">
               <div class="blurb-circle__icon">
 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220.51 220.51">
@@ -501,91 +489,85 @@
     </section> -->
 
 
-<!-- Our Features-->
-<section class="section-md bg-gray-lighter text-center decor-text" data-content="Services" id="offer">
-  <div class="container">
-    <div class="row justify-content-lg-center">
-      <div class="col-lg-10 col-xl-8">
-        <h4 class="heading-decorated">Co robimy</h4>
-        <p>Nasza firma oferuje elastyczne i niezawodne szablony stron internetowych, a także szeroką obsługę
-          klienta, więc nie musisz się martwić o zatrudnienie drogiej firmy projektującej strony internetowe.
-          Tworzymy wszystkie rodzaje szablonów internetowych, a wszystkie z nich mogą służyć jako podstawa dla
-          Twojej witryny.</p>
+    <!-- Our Features-->
+    <section class="section-md bg-gray-lighter text-center decor-text" data-content="Services" id="offer">
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-10 col-xl-8">
+            <h4 class="heading-decorated">Co robimy</h4>
+            <p>Nasza firma oferuje elastyczne i niezawodne szablony stron internetowych, a także szeroką obsługę
+              klienta, więc nie musisz się martwić o zatrudnienie drogiej firmy projektującej strony internetowe.
+              Tworzymy wszystkie rodzaje szablonów internetowych, a wszystkie z nich mogą służyć jako podstawa dla
+              Twojej witryny.</p>
+          </div>
+        </div>
+        <div class="row row-50">
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
+              <p class="blurb__title">identyfikacja wizualna</p>
+              <p>podstawowe narzędzie, służące kreowaniu wizerunku marki firmy na rynku</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
+              <p class="blurb__title">książki i czasopisma</p>
+              <p>projektujemy wszelkiego rodzaju książki i czasopisma profesjonalnie prygotowane do druku</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-bag2"></span></div>
+              <p class="blurb__title">projekty opakowań</p>
+              <p>Projekty od najmniejszych pudełek aż do dużych formatów opakowań</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-rocket"></span></div>
+              <p class="blurb__title">strony internetowe</p>
+              <p>proste, szybkie w pełni responsywne i przygotowane pod wszyskie urządzenia</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-equalizer"></span></div>
+              <p class="blurb__title">sklepy i platformy</p>
+              <p>sklepy internetowe oparte na wybranej platformie </p>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <!-- Blurb circle-->
+            <article class="blurb blurb-circle blurb-circle_centered">
+              <div class="blurb-circle__icon"><span class="icon linear-icon-file-search"></span></div>
+              <p class="blurb__title">social media</p>
+              <p>strony w mediach społecznościowych </p>
+            </article>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="row row-50">
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
-          <p class="blurb__title">identyfikacja wizualna</p>
-          <p>podstawowe narzędzie, służące kreowaniu wizerunku marki firmy na rynku</p>
-        </article>
+    </section>
+
+
+
+    <!-- Call to Action-->
+    <section class="section-md bg-accent bg-image text-center bg-overlay-darker"
+      style="background-image: url(images/about.jpg); background-position: center 40%;">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-md-11 col-lg-9 col-xl-8">
+            <h3 class="heading-decorated">NIE ZNALAZŁEŚ TEGO CO CHCESZ? </h3><a class="button button-primary"
+              href="#contact">Napisz do nas</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
-          <p class="blurb__title">książki i czasopisma</p>
-          <p>projektujemy wszelkiego rodzaju książki i czasopisma profesjonalnie prygotowane do druku</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-bag2"></span></div>
-          <p class="blurb__title">projekty opakowań</p>
-          <p>Projekty od najmniejszych pudełek aż do dużych formatów opakowań</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-rocket"></span></div>
-          <p class="blurb__title">strony internetowe</p>
-          <p>proste, szybkie w pełni responsywne i przygotowane pod wszyskie urządzenia</p>
-        </article>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-equalizer"></span></div>
-          <p class="blurb__title">sklepy i platformy</p>
-          <p>sklepy internetowe oparte na wybranej platformie </p>
-        </article>
-      </div>
-      <div class="col-md-6 col-lg-4">
-        <!-- Blurb circle-->
-        <article class="blurb blurb-circle blurb-circle_centered">
-          <div class="blurb-circle__icon"><span class="icon linear-icon-file-search"></span></div>
-          <p class="blurb__title">social media</p>
-          <p>strony w mediach społecznościowych </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
     <section class="section-md bg-gray-lighter text-center decor-text" data-content="Process">
       <div class="container">
         <h4 style="padding-top:50px;" class="heading-decorated">Nasz proces pracy</h4>
@@ -636,6 +618,133 @@
       </div>
     </section>
     <!--cta-->
+
+    <!-- services-->
+    <section class="section-md bg-default">
+      <div class="bg-decor d-flex align-items-center justify-content-end"
+        data-parallax-scroll="{&quot;x&quot;: -100, &quot;y&quot;: -30, &quot;smoothness&quot;: 30}"><img
+          src="images/bg-decor-9.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-md-center justify-content-lg-between row-50 align-items-center">
+          <div class="col-md-8 col-lg-6">
+            <div id="accordion" role="tablist">
+              <h1 class="why">
+                Dlaczego powinniście nas wybrać?
+                <span>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. </span></h1>
+              <!-- Bootstrap card-->
+              <div class="card card-custom">
+                <div class="card-custom-heading" id="accordionHeading1" role="tab">
+                  <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="#accordionCollapse1" aria-controls="accordionCollapse1">
+                      Identyfikacja źródła problemu</a>
+                  </h5>
+                </div>
+                <div class="card-custom-collapse collapse" id="accordionCollapse1" role="tabpanel"
+                  aria-labelledby="accordionHeading1">
+                  <div class="card-custom-body">
+                    <p>The major advantage is price: You get a high quality design for just $20-$70. You don’t have to
+                      hire a web designer or web design studio. Second advantage is time frame: It usually takes 5-15
+                      days for a good designer to produce a web page of such quality.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bootstrap card-->
+              <div class="card card-custom">
+                <div class="card-custom-heading" id="accordionHeading2" role="tab">
+                  <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="#accordionCollapse2" aria-controls="accordionCollapse2">Ochrona
+                      integralności marki</a>
+                  </h5>
+                </div>
+                <div class="card-custom-collapse collapse" id="accordionCollapse2" role="tabpanel"
+                  aria-labelledby="accordionHeading2">
+                  <div class="card-custom-body">
+                    <p>Our templates do not include any additional scripts. Newsletter subscriptions, search fields,
+                      forums, image galleries (in HTML versions of Flash products) are inactive. Basic scripts can be
+                      easily added at zemez.io If you are not sure that the element you’re interested in is active
+                      please contact our Support Chat for clarification.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Bootstrap card-->
+              <div class="card card-custom">
+                <div class="card-custom-heading" id="accordionHeading3" role="tab">
+                  <h5 class="card-custom-title"><a class="collapsed" role="button" data-toggle="collapse"
+                      data-parent="#accordion" href="#accordionCollapse3" aria-controls="accordionCollapse3">
+                      Jesteśmy kreatywni i profesjonalni</a>
+                  </h5>
+                </div>
+                <div class="card-custom-collapse collapse" id="accordionCollapse3" role="tabpanel"
+                  aria-labelledby="accordionHeading3">
+                  <div class="card-custom-body">
+                    <p>Website templates are available in Photoshop and HTML formats. Fonts are included with Photoshop
+                      file. In most templates HTML is compatible with Adobe® Dreamweaver® and Microsoft Frontpage®.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 col-lg-5">
+            <figure class="button-shadow"><img src="images/home-variant-3-555x800.jpg" alt="" width="555"
+                height="800" />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counters-->
+    <!-- counters-->
+    <section class="section parallax-container context-dark" data-parallax-img="images/about.jpg">
+      <div class="parallax-content">
+        <div class="container section-md">
+          <div class="row justify-content-md-center row-50">
+            <div class="col-md-6 col-lg-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter__icon linear-icon-coffee-cup"></div>
+                <div class="box-counter__wrap">
+                  <div class="counter">100</div>
+                </div>
+                <p class="box-counter__title">Projektów</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter__icon linear-icon-cube"></div>
+                <div class="box-counter__wrap">
+                  <div class="counter">1000</div>
+                </div>
+                <p class="box-counter__title">projektów</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter__icon linear-icon-chevrons-expand-horizontal"></div>
+                <div class="box-counter__wrap">
+                  <div class="counter">100</div><span>%</span>
+                </div>
+                <p class="box-counter__title">Zadowolonych klientów</p>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <!-- Box counter-->
+              <article class="box-counter">
+                <div class="box-counter__icon linear-icon-mustache-glasses"></div>
+                <div class="box-counter__wrap">
+                  <div class="counter">100</div><span>%</span>
+                </div>
+                <p class="box-counter__title">Zadowolonych klientów</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Klienci-->
     <section class="section-md text-center bg-default">
       <div class="bg-decor d-flex align-items-center justify-content-end"
@@ -669,25 +778,58 @@
             <figure class="box-icon-image"><a href="#"><img src="images/nzz logo.svg" alt="" width="143"
                   height="102" /></a></figure>
           </div>
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/company-7-109x102.png" alt="" width="109"
-                  height="102" /></a></figure>
-          </div> -->
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/company-8-109x102.png" alt="" width="109"
-                  height="102" /></a></figure>
-          </div> -->
         </div>
       </div>
     </section>
-    <!-- Call to Action-->
-    <section class="section-md bg-accent bg-image text-center bg-overlay-darker"
-      style="background-image: url(images/about.jpg); background-position: center 40%;">
+
+
+    <!-- Testimonials-->
+    <section id="testimontial" class="section-md bg-default text-center decor-text" data-content="Testimonials">
       <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-11 col-lg-9 col-xl-8">
-            <h3 class="heading-decorated">NIE ZNALAZŁEŚ TEGO CO CHCESZ? </h3><a class="button button-primary"
-              href="contacts.html">Napisz do nas</a>
+        <h4 class="heading-decorated">Opinie klientów</h4>
+        <div class="row row-50">
+          <div class="col-md-6">
+            <!-- Quote default-->
+            <div class="quote-default quote-default_left">
+              <div class="quote-default__image"><img src="images/1.jpg" alt="" width="120" height="120" />
+              </div>
+              <svg class="quote-default__mark" version="1.1" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" width="40.234px" height="33.484px" viewbox="0 0 30.234 23.484" xml:space="preserve">
+                <g>
+                  <path
+                    d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959							c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246							c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885							c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723							c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984							c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635							s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z">
+                  </path>
+                </g>
+              </svg>
+              <div class="quote-default__text">
+                <p class="q"> Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                  biznesowym.</p>
+              </div>
+              <p class="quote-default__cite">Paweł Ławniczak</p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- Quote default -->
+            <div class="quote-default quote-default_left">
+              <div class="quote-default__image"><img src="images/2.jpg" alt="" width="120" height="120" />
+              </div>
+              <svg class="quote-default__mark" version="1.1" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg"
+                x="0px" y="0px" width="40.234px" height="33.484px" viewbox="0 0 30.234 23.484" xml:space="preserve">
+                <g>
+                  <path
+                    d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959							c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246							c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885							c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723							c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984							c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635							s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z">
+                  </path>
+                </g>
+              </svg>
+              <div class="quote-default__text">
+                <p class="q"> Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                  biznesowym.</p>
+              </div>
+              <p class="quote-default__cite">Tomasz Wikło</p>
+            </div>
           </div>
         </div>
       </div>
@@ -708,7 +850,7 @@
               <li><a data-isotope-filter="Category 1" data-isotope-group="gallery" href="#">Web Design</a></li>
               <li><a data-isotope-filter="Category 2" data-isotope-group="gallery" href="#">Web Development</a></li>
             </ul>
-           
+
             <div class="isotope row" data-isotope-layout="fitRows" data-isotope-group="gallery">
               <div class="col-12 col-sm-6 col-lg-4 isotope-item" data-filter="Category 2"><a
                   class="img-thumbnail-variant-3" href="#"><img src="images/14.png" alt="" width="418"
@@ -722,12 +864,12 @@
                   </div>
                 </a>
               </div>
-             
+
               <div class="col-12 col-sm-6 col-lg-4 isotope-item" data-filter="Category 1"><a
                   class="img-thumbnail-variant-3" href="images/12.jpg" data-lightgallery="item">
                   <figure><img src="images/12.jpg" alt="" width="418" height="315" />
                   </figure>
-                  <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>                   
+                  <div class="caption"><span class="icon hover-top-element linear-icon-picture"></span>
                     <div class="divider"></div>
                     <ul class="list-inline-tag hover-top-element">
                       <li>Strona gry </li>
@@ -792,14 +934,103 @@
                     <p class="small hover-bottom-element"></p><span class="icon arrow-right linear-icon-plus"></span>
                   </div>
                 </a>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
       </div>
-    
-  <a class="button button-black" href="#">więcej</a>
-    
+      <a class="button button-black" href="#">więcej</a>
+    </section>
+
+
+
+    <!-- Parallax header-->
+    <section>
+      <section id="contact" class="section parallax-container context-dark" data-parallax-img="images/about.jpg">
+        <div class="parallax-content parallax-header">
+          <div class="parallax-header__inner context-dark">
+            <div class="parallax-header__content">
+              <div class="container">
+                <div class="row justify-content-sm-center">
+                  <div class="col-md-10 col-xl-8">
+                    <h2 class="heading-decorated">Kontakt</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="section-md bg-default decor-text" data-content="kontakt">
+      <div class="container">
+        <div class="row row-50">
+          <div class="col-md-5 col-lg-4">
+            <h4 class="heading-decorated">Dane kontaktowe</h4>
+            <ul class="list-sm contact-info">
+              <li>
+                <dl class="list-terms-inline">
+                  <dt>Adres</dt>
+                  <dd>Brodziszów 60 57-200 Ząbkowice Śląskie</dd>
+                </dl>
+              </li>
+              <li>
+                <dl class="list-terms-inline">
+                  <dt>Telefon</dt>
+                  <dd>
+                    <ul class="list-semicolon">
+                      <li><a href="tel:#" style="color: #111">Ania : 724-129-289</a></li>
+                      <li><a href="tel:#" style="color: #111">Krzysiek : 536-260-394</a></li>
+                    </ul>
+                  </dd>
+                </dl>
+              </li>
+              <li>
+                <dl class="list-terms-inline">
+                  <dt>godziny pracy</dt>
+                  <dd>pon-sob: 8 -20</dd>
+                </dl>
+              </li>
+              <li>
+                <ul class="list-inline-sm">
+                  <li><a class="icon-sm fa-facebook icon" href="#" style="color: #111"></a></li>
+                  <li><a class="icon-sm fa-github icon" href="#" style="color: #111"></a></li>
+                  <li><a class="icon-sm fa-behance icon" href="#" style="color: #111"></a></li>
+
+                  <li><a class="icon-sm fa-pinterest-p icon" href="#" style="color: #111"></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h4 class="heading-decorated">pozostań w kontakcie</h4>
+            <!-- RD Mailform-->
+            <form class="rd-mailform rd-mailform_style-1 form-shadow" data-form-output="form-output-global"
+              data-form-type="contact" method="post" action="bat/rd-mailform.php">
+              <div class="form-wrap form-wrap_icon linear-icon-man">
+                <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                <label class="form-label" for="contact-name">Imię</label>
+              </div>
+              <div class="form-wrap form-wrap_icon linear-icon-envelope">
+                <input class="form-input" id="contact-email" type="email" name="email"
+                  data-constraints="@Email @Required">
+                <label class="form-label" for="contact-email">E-mail</label>
+              </div>
+              <div class="form-wrap form-wrap_icon linear-icon-feather">
+                <textarea class="form-input" id="contact-message" name="message"
+                  data-constraints="@Required"></textarea>
+                <label class="form-label" for="contact-message">Wiadomość</label>
+              </div>
+              <button class="button button-primary button-shadow" type="submit">wyślij</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <iframe style="width: 100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2609.2506954101977!2d16.787785116025127!3d50.646693310975785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470e3065c0cc8985%3A0xe33919831759a716!2s57-200+Brodzisz%C3%B3w!5e1!3m2!1spl!2spl!4v1563724860380!5m2!1spl!2spl"
+        width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
     <!-- PARTNERS-->
@@ -828,110 +1059,10 @@
             <figure class="box-icon-image"><a href="#"><img src="images/leoprard_logo.png" alt="" width="126"
                   height="102" /></a></figure>
           </div>
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/sigma logo.svg" alt="" width="138"
-                  height="102" /></a></figure>
-          </div> -->
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/nzz logo.svg" alt="" width="143"
-                  height="102" /></a></figure>
-          </div> -->
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/company-7-109x102.png" alt="" width="109"
-                  height="102" /></a></figure>
-          </div> -->
-          <!-- <div class="col-sm-6 col-md-3">
-            <figure class="box-icon-image"><a href="#"><img src="images/company-8-109x102.png" alt="" width="109"
-                  height="102" /></a></figure>
-          </div> -->
         </div>
       </div>
     </section>
-    <!-- Page Footer-->
-    <!-- <section class="pre-footer-corporate bg-image-7 bg-overlay-darkest">
-      <div class="container">
-        <div class="row justify-content-sm-center justify-content-lg-start row-30 row-md-60">
-          <div class="col-sm-10 col-md-6 col-lg-10 col-xl-3">
-            <h6>O nas </h6>
-            <p>Od początku naszej pracy zawodowej pasjonuje nas tworzenie komfortowych rozwiązań z dziedziny web&design.
-              Sukces firmy w dużej mierze opiera się na doznaniach użytkowników oraz w możliwości szybkiego znalezienia
-              informacii na temat poszukiwaniej usługi lub produktu. Nasze doświadczenie pomoże Twojej firmie stać się
-              liderem na rynku..</p>
-          </div>
-          <div class="col-sm-10 col-md-6 col-lg-3 col-xl-3">
-            <h6>Nawigacja</h6>
-            <ul class="list-xxs">
-              <li><a href="about.html">O nas</a></li>
-              <li><a href="#">Główna</a></li>
-              <li><a href="#">Co robimy</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Kontakt</a></li>
-            </ul>
-          </div> -->
-    <!-- <div class="col-sm-10 col-md-6 col-lg-5 col-xl-3">
-            <h6>Ostatnie komentarze</h6>
-            <ul class="list-xs">
-              <li> -->
-    <!-- Comment minimal-->
-    <!-- <article class="comment-minimal">
-                  <p class="comment-minimal__author">Brian Williamson on</p>
-                  <p class="comment-minimal__link"><a href="#">Site Speed and Search Engines Optimization Aspects</a>
-                  </p>
-                </article>
-              </li>
-              <li> -->
-    <!-- Comment minimal-->
-    <!-- <article class="comment-minimal">
-                  <p class="comment-minimal__author">Brian Williamson on</p>
-                  <p class="comment-minimal__link"><a href="#">5 Things to Know Before You Buy an HTML Template</a></p>
-                </article>
-              </li>
-              <li> -->
-    <!-- Comment minimal-->
-    <!-- <article class="comment-minimal">
-                  <p class="comment-minimal__author">Brian Williamson on</p>
-                  <p class="comment-minimal__link"><a href="#">Turning Your Site into a Sales Machine</a></p>
-                </article>
-              </li>
-            </ul>
-          </div> -->
-    <!-- <div class="col-sm-10 col-md-6 col-lg-4 col-xl-3">
-            <h6>Kontakt</h6>
-            <ul class="list-xs">
-              <li>
-                <dl class="list-terms-minimal">
-                  <dt>Adres</dt>
-                  <dd>Brodziszów 60 57-200 Ząbkowice Śląskie, Polska</dd>
-                </dl>
-              </li>
-              <li>
-                <dl class="list-terms-minimal">
-                  <dt>Telefon</dt> <br>
-                  <dd>
-                    <ul class="list-semicolon">
-                      <li><a href="tel:#">Ania: 724-129-289</a></li> <br>
-                      <li><a href="tel:#">Krzysiek: 536-260-394</a></li>
-                    </ul>
-                  </dd>
-                </dl>
-              </li>
-              <li>
-                <dl class="list-terms-minimal">
-                  <dt>E-mail</dt> <br>
-                  <dd><a href="mailto:#">projektywszelakie@gmail.com</a></dd>
-                </dl>
-              </li>
-              <li>
-                <dl class="list-terms-minimal">
-                  <dt>Godziny pracy</dt>
-                  <dd>Pon-Sob: 8 - 20 </dd>
-                </dl>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section> -->
+
 
     <footer class="footer-corporate bg-gray-darkest">
       <div class="container">
@@ -948,8 +1079,6 @@
         </div>
       </div>
     </footer>
-
-
   </div>
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
