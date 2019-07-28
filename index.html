@@ -17,6 +17,11 @@
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=Fira+Sans:300,600,800,800i%7COpen+Sans:300,400,400i">
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fonts.css">
@@ -154,7 +159,7 @@
         </nav>
       </div>
     </header>
-     
+
     <div class="swiper-container swiper-slider" id="main"
       style="background-image: linear-gradient(134deg, rgb(29,169,255) 0%, rgb(77,0,128) 50%, rgb(19,0,95) 100%);">
 
@@ -213,15 +218,11 @@
             <h3
               data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
               pasjonuje nas tworzenie </h3>
-
-
             <div class="circle-foto">
-
             </div>
-
-
             <div class="group-lg group-middle">
-              <a style="position: relative;top: 50px;" class="button button-primary button-shadow" href="#offer">Oferta</a>
+              <a style="position: relative;top: 50px;" class="button button-primary button-shadow"
+                href="#offer">Oferta</a>
               <a style=" position: relative; top: 50px;" class=" button button-black button-shadow" href="#about">o
                 nas</a></div>
           </div>
@@ -749,22 +750,22 @@
             </div>
           </div>
           <div class="col-md-7 col-lg-5">
-            <figure class="button-shadow"><img src="images/development.jpg" style="height:800px; object-fit: cover;" alt="" width="555"
-                height="800" />
+            <figure class="button-shadow"><img src="images/development.jpg" style="height:800px; object-fit: cover;"
+                alt="" width="555" height="800" />
             </figure>
           </div>
         </div>
       </div>
     </section>
-    
-    
-    
-    
+
+
+
+
     <!-- Klienci-->
     <section class="section-md text-center bg-default" id="client">
       <div class="bg-decor d-flex align-items-center justify-content-end"
         data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png"
-          alt="" />
+          alt="" style="height: auto"/>
       </div>
       <div class="container">
         <h4 class="heading-decorated">Nasi klienci</h4>
@@ -796,12 +797,12 @@
         </div>
       </div>
     </section>
-    
-    
-    
-      
-    
-    
+
+
+
+
+
+
     <!-- counters-->
     <section class="section parallax-container context-dark"
       style="background-image: linear-gradient(134deg, rgb(29,169,255) 0%, rgb(77,0,128) 50%, rgb(19,0,95) 100%);">
@@ -902,62 +903,98 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>  
 
-    
+<!-- TESTIMONTIALS -->
 
-
-    <!-- Testimonials-->
-    <section id="testimontial" class="section-md bg-default text-center decor-text" data-content="Testimonials">
-      <div class="container">
+    <section class="testi" style="padding-top: 50px;">
         <h4 class="heading-decorated">Opinie klientów</h4>
-        <div class="row row-50">
-          <div class="col-md-6">
-            <!-- Quote default-->
-            <div class="quote-default quote-default_left">
-              <div class="quote-default__image"><img src="images/1.jpg" alt="" width="120" height="120" />
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel" style="padding-top: 75px;">
+              <div class="testimonial">
+                <div class="pic">
+                  <img src="images/1.jpg">
+                </div>
+                <div class="testimonial-profile">
+                  <h3 class="title">Paweł Ławniczak </h3>
+                  <span class="post">Upbrand owner</span>
+                </div>
+                <p class="description">
+                    Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                    realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                    biznesowym.
+                </p>
               </div>
-              <svg class="quote-default__mark" version="1.1" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg"
-                x="0px" y="0px" width="40.234px" height="33.484px" viewbox="0 0 30.234 23.484" xml:space="preserve">
-                <g>
-                  <path
-                    d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959							c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246							c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885							c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723							c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984							c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635							s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z">
-                  </path>
-                </g>
-              </svg>
-              <div class="quote-default__text">
-                <p class="q"> Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
-                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
-                  biznesowym.</p>
+              <div class="testimonial">
+                <div class="pic">
+                  <img src="images/2.jpg" >
+                </div>
+                <div class="testimonial-profile">
+                  <h3 class="title">Tomasz Wikło </h3>
+                  <span class="post">studio lepopard</span>
+                </div>
+                <p class="description">
+                    Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                    realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                    biznesowym.
+                </p>
               </div>
-              <p class="quote-default__cite">Paweł Ławniczak</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <!-- Quote default -->
-            <div class="quote-default quote-default_left">
-              <div class="quote-default__image"><img src="images/2.jpg" alt="" width="120" height="120" />
+              <div class="testimonial">
+                <div class="pic">
+                  <img src="images/1.jpg">
+                </div>
+                <div class="testimonial-profile">
+                  <h3 class="title">Steve Thomas</h3>
+                  <span class="post">Web Developer</span>
+                </div>
+                <p class="description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida.
+                  Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.
+                </p>
               </div>
-              <svg class="quote-default__mark" version="1.1" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg"
-                x="0px" y="0px" width="40.234px" height="33.484px" viewbox="0 0 30.234 23.484" xml:space="preserve">
-                <g>
-                  <path
-                    d="M12.129,0v1.723c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959							c0,0.445,0.07,0.773,0.211,0.984c0.093,0.141,0.199,0.211,0.316,0.211c0.117,0,0.293-0.082,0.527-0.246							c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.519,0.545,3.551,1.635c1.031,1.09,1.547,2.385,1.547,3.885							c0,1.57-0.592,2.953-1.775,4.148c-1.184,1.195-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							C0.715,19.441,0,17.274,0,14.555c0-3.164,0.972-6,2.918-8.508C4.863,3.539,7.933,1.524,12.129,0z M29.039,0v1.723							c-2.438,0.891-4.348,2.291-5.73,4.201c-1.383,1.911-2.074,3.897-2.074,5.959c0,0.445,0.07,0.773,0.211,0.984							c0.094,0.141,0.199,0.211,0.316,0.211s0.293-0.082,0.527-0.246c0.75-0.539,1.699-0.809,2.848-0.809c1.336,0,2.52,0.545,3.551,1.635							s1.547,2.385,1.547,3.885c0,1.57-0.592,2.953-1.775,4.148s-2.619,1.793-4.307,1.793c-1.969,0-3.668-0.809-5.098-2.426							s-2.145-3.785-2.145-6.504c0-3.164,0.973-6,2.918-8.508C21.773,3.539,24.844,1.524,29.039,0z">
-                  </path>
-                </g>
-              </svg>
-              <div class="quote-default__text">
-                <p class="q"> Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
-                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
-                  biznesowym.</p>
-              </div>
-              <p class="quote-default__cite">Tomasz Wikło</p>
+              <div class="testimonial">
+                  <div class="pic">
+                    <img src="images/2.jpg" >
+                  </div>
+                  <div class="testimonial-profile">
+                    <h3 class="title">Tomasz Wikło </h3>
+                    <span class="post">studio lepopard</span>
+                  </div>
+                  <p class="description">
+                      Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                      realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                      biznesowym.
+                  </p>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- portfolio-->
     <section class="section-md bg-default text-center" id="gallery">
@@ -1152,7 +1189,7 @@
         </div>
       </div>
     </section>
-    
+
 
     <!-- PARTNERS-->
 
@@ -1207,7 +1244,22 @@
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
 
-  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("#testimonial-slider").owlCarousel({
+        items: 2,
+        itemsDesktop: [1000, 2],
+        itemsDesktopSmall: [979, 2],
+        itemsTablet: [768, 1],
+        pagination: false,
+        navigation: false,
+        navigationText: ["", ""],
+        autoPlay: true
+      });
+    });
+  </script>
 
 
 </body>
