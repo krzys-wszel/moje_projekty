@@ -20845,7 +20845,7 @@ h3+.card-custom-group-wrap {
 	width: 200px;
 	height: 200px;
 	margin: auto;
-	background: url('/images/tel.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
+	background: url('../images/tel.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
 	/*background: url('/images/tel.jpg') no-repeat 50% / 70% rgba(0, 0, 0, .1);*/
 	color: #fd4040;
 	box-shadow: inset 0 0 0 1px lightgray;
@@ -20893,7 +20893,7 @@ h3+.card-custom-group-wrap {
 	width: 200px;
 	height: 200px;
 	margin: auto;
-	background: url('/images/kom.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
+	background: url('../images/kom.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
 	/*background: url('/images/tel.jpg') no-repeat 50% / 70% rgba(0, 0, 0, .1);*/
 	color: #fd4040;
 	box-shadow: inset 0 0 0 1px lightgray;
