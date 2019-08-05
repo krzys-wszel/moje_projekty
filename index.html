@@ -42,9 +42,15 @@
       display: block;
     }
   </style>
+ 
 </head>
 
 <body>
+   <div class="cursor"></div> 
+  <!-- <div id="cursor">
+    <div id="circle-big"></div>
+    <div id="circle"></div>
+  </div> -->
 
   <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
         src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
@@ -218,8 +224,52 @@
             <h3
               data-swiper-anime="{ &quot;animation&quot;: &quot;swiperContentStack&quot;, &quot;duration&quot;: 1000, &quot;delay&quot;: 500 }">
               pasjonuje nas tworzenie </h3>
-            <div class="circle-foto">
+
+
+            <div class="b1"> </div>
+            <div class="b2"> </div>
+
+
+
+            <div class="shape">
+              <svg width="190px" height="190px" viewBox="0 0 190 190" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+
+                <title>Shape</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+                  <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient-1">
+                    <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+                    <stop stop-color="#FFFFFF" stop-opacity="0.05" offset="100%"></stop>
+                  </radialGradient>
+                </defs>
+                <g id="1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="1440---Education" transform="translate(-843.000000, -261.000000)"
+                    fill="url(#radialGradient-1)">
+                    <g id="content" transform="translate(200.000000, 261.000000)">
+                      <g id="education" transform="translate(643.000000, 0.000000)">
+                        <g id="2">
+                          <path
+                            d="M108.13762931320042,7.65930211384352 C157.4269633132438,21.59689880722583 208.52260159878324,74.89919361204575 190.24209069864744,126.46207105121469 C171.96158045984714,178.0249482258494 136.33241681921592,193.29024942878365 116.68788701783394,191.0801419613422 C97.04335728418488,188.87003449390076 51.033549961336675,195.53168198437447 21.97328686133668,161.94267832299562 C-7.086976235277542,128.3536753229956 4.796070816195534,90.49020514315312 10.826706875771867,67.90494176549615 C26.10194497483731,10.851705811003486 58.84829454549354,-6.278294546158648 108.13762931320042,7.65930211384352 Z"
+                            id="Shape"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
             </div>
+
+
+
+
+
+
+
+
+
+
+
             <div class="group-lg group-middle">
               <a style="position: relative;top: 50px;" class="button button-primary button-shadow"
                 href="#offer">Oferta</a>
@@ -232,7 +282,7 @@
 
 
     <!-- About us-->
-    <section class="bg-gray-lighter object-wrap decor-text" data-content="O nas" id="about">
+    <section class="bg-gray-lighter object-wrap decor-text" data-content="Onas" id="about">
       <div class="bg-decor d-flex align-items-center justify-content-start"
         data-parallax-scroll="{&quot;y&quot;: 50,  &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png"
           alt="" />
@@ -520,7 +570,8 @@
           <div class="col-md-6 col-lg-4">
             <!-- Blurb circle-->
             <article class="blurb blurb-circle blurb-circle_centered">
-              <div class="blurb-circle__icon"><span class="icon linear-icon-feather"></span></div>
+              <div class="blurb-circle__icon"><span class="icon linear-icon-feather" data-toggle="modal"
+                  data-target="#myModal1"></span></div>
               <p class="blurb__title">identyfikacja wizualna</p>
               <p>podstawowe narzędzie, służące kreowaniu wizerunku marki firmy na rynku</p>
             </article>
@@ -528,7 +579,8 @@
           <div class="col-md-6 col-lg-4">
             <!-- Blurb circle-->
             <article class="blurb blurb-circle blurb-circle_centered">
-              <div class="blurb-circle__icon"><span class="icon linear-icon-menu3"></span></div>
+              <div class="blurb-circle__icon"><span class="icon linear-icon-menu3" data-toggle="modal"
+                  data-target="#myModal2"></span></div>
               <p class="blurb__title">książki i czasopisma</p>
               <p>projektujemy wszelkiego rodzaju książki i czasopisma profesjonalnie prygotowane do druku</p>
             </article>
@@ -536,7 +588,8 @@
           <div class="col-md-6 col-lg-4">
             <!-- Blurb circle-->
             <article class="blurb blurb-circle blurb-circle_centered">
-              <div class="blurb-circle__icon"><span class="icon linear-icon-bag2"></span></div>
+              <div class="blurb-circle__icon"><span class="icon linear-icon-bag2" data-toggle="modal"
+                  data-target="#myModal3"></span></div>
               <p class="blurb__title">projekty opakowań</p>
               <p>Projekty od najmniejszych pudełek aż do dużych formatów opakowań</p>
             </article>
@@ -544,7 +597,9 @@
           <div class="col-md-6 col-lg-4">
             <!-- Blurb circle-->
             <article class="blurb blurb-circle blurb-circle_centered">
-              <div class="blurb-circle__icon"><span class="icon linear-icon-rocket"></span></div>
+              <div class="blurb-circle__icon"><span class="icon linear-icon-rocket" data-toggle="popover"
+                  data-placement="bottom" title="Popover Header"
+                  data-content="Some content inside the popover"></span>></span></div>
               <p class="blurb__title">strony internetowe</p>
               <p>proste, szybkie w pełni responsywne i przygotowane pod wszyskie urządzenia</p>
             </article>
@@ -570,6 +625,88 @@
     </section>
 
 
+    <!-- MODALE  -->
+    <!-- The Modal -->
+    <div class="modal" id="myModal1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Identyfikacja wizualna</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti fugit alias recusandae incidunt explicabo
+            error laboriosam enim accusantium. Illum quae doloribus laudantium! Nam omnis corrupti aliquam. Similique
+            laudantium incidunt provident.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknij</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Książki i czasopisma</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, cupiditate! Corporis, delectus culpa
+            consequatur, perferendis inventore veniam nesciunt hic dicta blanditiis facere officiis reiciendis quaerat,
+            eveniet excepturi sunt ducimus deserunt!
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Zamknji</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Modal Heading</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Modal body..
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
 
     <!-- Call to Action-->
     <section class="section-md bg-accent bg-image text-center bg-overlay-darker"
@@ -592,7 +729,7 @@
                   <path
                     d="M1920,408.651004 C643.117748,410.239444 3.11774828,410.239444 0,408.651004 L0,279.469546 C740.574468,345.677945 843.188992,-128.789792 1920,35.669798 C1920,44.1946085 1920,168.521677 1920,408.651004 Z"
                     id=from_1-
-                    transform="translate(960.000000, 205.325502) scale(1, -1) translate(-960.000000, -205.325502) ">
+                    transform="translate(960.000000, 205.325502) scale(1, -1) translate(-960.000000, -105.325502) ">
                   </path>
                 </g>
               </g>
@@ -614,7 +751,7 @@
                   <path
                     d="M1920,425.977003 C643.117748,427.565442 3.11774828,427.565442 -2.84217094e-14,425.977003 L-4.54747351e-13,286.99596 C730.197368,344.977003 1195.61921,-102.022997 1920,22.9770026 C1920,31.5018132 1920,165.835146 1920,425.977003 Z"
                     id=from_1-
-                    transform="translate(960.000000, 213.988501) scale(1, -1) translate(-960.000000, -213.988501) ">
+                    transform="translate(960.000000, 213.988501) scale(1, -1) translate(-960.000000, -113.988501) ">
                   </path>
                 </g>
               </g>
@@ -764,8 +901,8 @@
     <!-- Klienci-->
     <section class="section-md text-center bg-default" id="client">
       <div class="bg-decor d-flex align-items-center justify-content-end"
-        data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png"
-          alt="" style="height: auto"/>
+        data-parallax-scroll="{&quot;y&quot;: 130, &quot;smoothness&quot;: 30}"><img src="images/bg-decor-4.png" alt=""
+          style="height: auto" />
       </div>
       <div class="container">
         <h4 class="heading-decorated">Nasi klienci</h4>
@@ -824,7 +961,7 @@
                   <path
                     d="M1920,408.651004 C643.117748,410.239444 3.11774828,410.239444 0,408.651004 L0,279.469546 C740.574468,345.677945 843.188992,-128.789792 1920,35.669798 C1920,44.1946085 1920,168.521677 1920,408.651004 Z"
                     id=from_1-
-                    transform="translate(960.000000, 205.325502) scale(1, -1) translate(-960.000000, -205.325502) ">
+                    transform="translate(960.000000, 205.325502) scale(-1, -1) translate(-960.000000, -55.325502) ">
                   </path>
                 </g>
               </g>
@@ -846,7 +983,7 @@
                   <path
                     d="M1920,425.977003 C643.117748,427.565442 3.11774828,427.565442 -2.84217094e-14,425.977003 L-4.54747351e-13,286.99596 C730.197368,344.977003 1195.61921,-102.022997 1920,22.9770026 C1920,31.5018132 1920,165.835146 1920,425.977003 Z"
                     id=from_1-
-                    transform="translate(960.000000, 213.988501) scale(1, -1) translate(-960.000000, -213.988501) ">
+                    transform="translate(960.000000, 213.988501) scale(-1, -1) translate(-960.000000, -63.988501) ">
                   </path>
                 </g>
               </g>
@@ -903,12 +1040,12 @@
           </div>
         </div>
       </div>
-    </section>  
+    </section>
 
-<!-- TESTIMONTIALS -->
+    <!-- TESTIMONTIALS -->
 
-    <section class="testi" style="padding-top: 50px;">
-        <h4 class="heading-decorated">Opinie klientów</h4>
+    <section class="testi decor-text" style="padding-top: 50px;" data-content="Opinie">
+      <h4 class="heading-decorated">Opinie klientów</h4>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -922,23 +1059,23 @@
                   <span class="post">Upbrand owner</span>
                 </div>
                 <p class="description">
-                    Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
-                    realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
-                    biznesowym.
+                  Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                  biznesowym.
                 </p>
               </div>
               <div class="testimonial">
                 <div class="pic">
-                  <img src="images/2.jpg" >
+                  <img src="images/2.jpg">
                 </div>
                 <div class="testimonial-profile">
                   <h3 class="title">Tomasz Wikło </h3>
                   <span class="post">studio lepopard</span>
                 </div>
                 <p class="description">
-                    Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
-                    realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
-                    biznesowym.
+                  Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                  biznesowym.
                 </p>
               </div>
               <div class="testimonial">
@@ -955,19 +1092,19 @@
                 </p>
               </div>
               <div class="testimonial">
-                  <div class="pic">
-                    <img src="images/2.jpg" >
-                  </div>
-                  <div class="testimonial-profile">
-                    <h3 class="title">Tomasz Wikło </h3>
-                    <span class="post">studio lepopard</span>
-                  </div>
-                  <p class="description">
-                      Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
-                      realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
-                      biznesowym.
-                  </p>
+                <div class="pic">
+                  <img src="images/2.jpg">
                 </div>
+                <div class="testimonial-profile">
+                  <h3 class="title">Tomasz Wikło </h3>
+                  <span class="post">studio lepopard</span>
+                </div>
+                <p class="description">
+                  Współpraca z Krzysztofem zawsze przebiega pomyślnie i bardzo sprawnie. Projekty
+                  realizuje z dużą starannością, polecam współpracę z Krzysztofem jako partnerem
+                  biznesowym.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1124,7 +1261,7 @@
         </div>
       </section>
     </section>
-    <section class="section-md bg-default decor-text" data-content="kontakt">
+    <section class="section-md bg-default decor-text" data-content="Kontakt">
       <div class="container">
         <div class="row row-50">
           <div class="col-md-5 col-lg-4">
@@ -1241,11 +1378,17 @@
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script> 
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/cursor.js"></script>
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js">
   </script>
+  
   <script>
     $(document).ready(function () {
       $("#testimonial-slider").owlCarousel({
@@ -1261,7 +1404,7 @@
     });
   </script>
 
-
+ 
 </body>
 
 </html>
