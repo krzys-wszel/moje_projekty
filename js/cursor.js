@@ -1,25 +1,44 @@
  
 
 
-const root = document.documentElement;
- root.style.cursor = 'none';
-document.addEventListener( 'mousemove', ( { pageX, pageY } ) => {
-	root.style.setProperty( '--cursorX', `${ pageX }px` );
-	root.style.setProperty( '--cursorY', `${ pageY }px` );
-} );
+  
+ $('body').mouseover(function() {
+	$(this).css({
+	  cursor: 'none'
+	});
+  });
+  
+  $(document).on('mousemove', function(e) {
+	$('#circle-big').css({
+	  left: e.pageX,
+	  top: e.pageY
+	});
+	$('#circle').css({
+	  left: e.pageX,
+	  top: e.pageY
+	});
 
-document.addEventListener( 'mouseenter', ( { target } ) => {
+});
+
+ document.addEventListener( 'mouseenter', ( { target } ) => {
+ 	if ( target && target.matches && target.matches( 'a, button' ) ) {
+ 		$('#circle-big').css({
+			 transform: 'scale(1.5)',
+			// width: '100px',
+			// height: '100px',
+			 
+		 });
+ 	}
+ }, true );
+
+ document.addEventListener( 'mouseleave', ( { target } ) => {
 	if ( target && target.matches && target.matches( 'a, button' ) ) {
-		root.style.setProperty( '--cursorScale', 1.5 );
-		root.style.setProperty( '--cursorOpacity', 0 );
-   }
-}, true );
-document.addEventListener( 'mouseleave', ( { relatedTarget } ) => {
-	if ( relatedTarget && relatedTarget.matches && !relatedTarget.matches( 'a, button' ) ) {
-		root.style.setProperty( '--cursorScale', 1 );
-		root.style.setProperty( '--cursorOpacity', 1 );
+		$('#circle-big').css({
+			transform: 'scale(1)',
+		//	width: '60px',
+		//	height: '60px',
+		});
 	}
 }, true );
-
   
  
