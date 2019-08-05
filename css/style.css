@@ -152,6 +152,7 @@ a:hover,
 a:focus {
 	color: #fd4040;
 	text-decoration: none;
+	cursor: none;
 }
 
 
@@ -11807,6 +11808,7 @@ h4+.owl-carousel {
 	padding: 9px 56px 9px 16px;
 	font-size: 12px;
 	line-height: 1.5;
+
 }
 
 .rd-navbar-fixed .rd-megamenu-list>li+li,
@@ -12521,6 +12523,7 @@ html.rd-navbar-fixed-linked .page {
 
 .rd-navbar-sidebar .rd-navbar-nav li:not(.opened):not(.active)>a:hover+.rd-navbar-submenu-toggle::after {
 	transform: none;
+	cursor: none;
 }
 
 .rd-navbar-sidebar .rd-navbar-nav li.opened>a {
@@ -20251,6 +20254,16 @@ html[class*="ie"] .dtp-hour-hand {
 		padding: 30px 30px 22px 0;
 	}
 }
+.development {
+	height: 800px;
+}
+@media (max-width: 991px) {
+	.development {
+		width: 100vw;
+		height: auto;
+	}
+
+}
 
 h3+.card-custom-group-wrap {
 	margin-top: 30px;
@@ -20832,7 +20845,7 @@ h3+.card-custom-group-wrap {
 	width: 200px;
 	height: 200px;
 	margin: auto;
-	background: url('images/tel.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
+	background: url('/images/tel.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
 	/*background: url('/images/tel.jpg') no-repeat 50% / 70% rgba(0, 0, 0, .1);*/
 	color: #fd4040;
 	box-shadow: inset 0 0 0 1px lightgray;
@@ -20880,7 +20893,7 @@ h3+.card-custom-group-wrap {
 	width: 200px;
 	height: 200px;
 	margin: auto;
-	background: url('images/kom.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
+	background: url('/images/kom.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
 	/*background: url('/images/tel.jpg') no-repeat 50% / 70% rgba(0, 0, 0, .1);*/
 	color: #fd4040;
 	box-shadow: inset 0 0 0 1px lightgray;
