@@ -8,7 +8,6 @@
 
 * {
 	cursor: none;
-	font-family: 'Quicksand', sans-serif;
 }
 a:focus,
 button:focus {
@@ -1140,10 +1139,8 @@ span.button {
 	color: #80deea;
 }
 
-
-
 .box-counter__title {
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.3;
@@ -1153,7 +1150,7 @@ span.button {
 }
 
 .box-counter__wrap>* {
-	font-family: 'Quicksand', sans-serif;
+	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	display: inline;
 	font-size: 40px;
 	font-weight: 700;
@@ -1182,20 +1179,6 @@ span.button {
 	/*transform: translateY(-3px);*/
 	/*filter: drop-shadow(-8px 8px 2px rgba(0, 0, 0, 0.2));*/
 }
-
-@media (max-width: 767px) {
-	.box-counter__icon {
-		font-size: 28px;
-	}
-	.box-counter__wrap>* {	 
-		font-size: 20px;		 
-	}
-	.box-counter__title {		
-		font-size: 12px;	 
-	}
-}
-
-
 
 .blurb img {
 	width: 100px;
@@ -1262,24 +1245,13 @@ span.button {
 	margin-top: 40px;
 }
 
-@media (max-width: 576px){
-.blurb-circle__icon .icon {
-      font-size: 22px;    
-}
-.blurb__title {
-    font-size: 14px; 
-}
-
-}
-
-
 @media (min-width: 576px) {
 	.blurb-circle {
 		text-align: left;
 	}
 }
 
-@media (min-width: 767px) {
+@media (min-width: 992px) {
 	.desktop .blurb-circle .blurb-circle__icon .icon {
 		position: relative;
 		z-index: 1;
@@ -1304,17 +1276,8 @@ span.button {
 	.desktop .blurb-circle:hover .blurb-circle__icon .icon::after {
 		transform: translateX(0);
 	}
-	.desktop .blurb-circle:hover .blurb-circle__icon .icon {
-		color: #fd4040;
-	}
+}
 
-}
-  .button-black {
-    color: #fff;
-    background-color: #fd4040;
-    border-color: lightgray;
-    border-radius: 50px;
-}
 @media (min-width: 1200px) {
 	.blurb-circle__icon .icon {
 		font-size: 36px;
@@ -1323,14 +1286,6 @@ span.button {
 	.blurb-circle+.blurb-circle {
 		margin-top: 55px;
 	}
-}
-
-
-@media (max-width: 766px){
-.blurb-circle__icon .icon:hover {   
-    color: #fd4040;
-    background: lightgray;   
-}
 }
 
 .blurb-circle.blurb-circle_centered {
@@ -20807,8 +20762,8 @@ h3+.card-custom-group-wrap {
 .testi .testimonial{ margin: 0 20px 50px; }
 .testi .testimonial .pic{
     display: inline-block;
-    width: 105px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     margin: 0 15px 15px 0;
 }
