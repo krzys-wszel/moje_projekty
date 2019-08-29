@@ -1,10 +1,8 @@
 {
-  "useSmtp": false,
-  "host": "stmp.gmail.com",              
+  "useSmtp": true,
+  "host": "poczta.interia.pl",              
   "port": 465,													 
-  "username": "krzys_wszel@interia.eu",					 
-  "password": "password",	
-  //"password": "demopassword",						 
-  //"recipientEmail":  "demo@gmail.com",
-  "recipientEmail":  "krzys_wszel@interia.eu"			 
+  "username": "krzys_wszel",					 
+  "password": "demopassword",						 
+  "recipientEmail":  "krzys_wszel@interia.eu"		 
 }

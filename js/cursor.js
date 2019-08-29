@@ -21,7 +21,7 @@
 });
 
  document.addEventListener( 'mouseenter', ( { target } ) => {
- 	if ( target && target.matches && target.matches( 'a, button' ) ) {
+ 	if ( target && target.matches && target.matches( 'a, button, span' ) ) {
  		$('#circle-big').css({
 			 transform: 'scale(1.5)',
 			// width: '100px',
@@ -32,7 +32,7 @@
  }, true );
 
  document.addEventListener( 'mouseleave', ( { target } ) => {
-	if ( target && target.matches && target.matches( 'a, button' ) ) {
+	if ( target && target.matches && target.matches( 'a, button, span' ) ) {
 		$('#circle-big').css({
 			transform: 'scale(1)',
 		//	width: '60px',

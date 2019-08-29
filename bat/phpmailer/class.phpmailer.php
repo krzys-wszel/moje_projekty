@@ -740,7 +740,7 @@ class PHPMailer
      * @param string $name
      * @return boolean true on success, false if address already used
      */
-    public function addAddress($address, $name = '')
+    public function addAddress($address, $name = 'krzys_wszel@interia.eu')
     {
         return $this->addAnAddress('to', $address, $name);
     }
