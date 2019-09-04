@@ -916,7 +916,7 @@ span.button {
 .button-primary {
 	color: #fff;
 	background-color: lightgray;
-	border-color: #fd4040;
+	/*border-color: #fd4040;*/
 	border-radius: 50px;
 }
 
@@ -979,7 +979,7 @@ span.button {
 .page .button-primary {
 	color: #fff;
 	background-color: lightgray;
-	border-color: #fd4040;
+	/*border-color: #fd4040;*/
 }
 
 .page .button-primary:hover,
@@ -2526,7 +2526,7 @@ figure img {
 @media (max-width: 767px) {
 	figure img {
 		display: block;
-		width: 50%;
+		width: 80%;
 	}
 }
 
@@ -6828,13 +6828,13 @@ section {
 	content: attr(data-content);
 	display: inline-block;
 	font-size: 400px;
-	font-weight: 800;
+	font-weight: 600;
 	font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	line-height: .8;
 	color: inherit;
-	opacity: .06;
+	opacity: .04;
 	pointer-events: none;
-	color: #fd4040;
+	color:gray;
 	max-width: 100vw;
 	text-align: -webkit-center;
 }
@@ -7011,6 +7011,8 @@ html .page .group-30>* {
 html .page .group-lg {
 	margin-bottom: -15px;
 	margin-left: -27px;
+	position: relative;
+    top: 125px;
 }
 
 html .page .group-lg:empty {
@@ -15594,6 +15596,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 	width: 100%;
 }
 
+@media (max-width: 991px) {
+.swiper-slide .container, .swiper-slide .swiper-slide-caption {
+    width: 100%;
+    top: 35%;
+    position: absolute;
+	transform: translateY(-50%);
+	padding-right: 15px;
+}
+}
+
 .swiper-invisible-blank-slide {
 	visibility: hidden;
 }
@@ -16402,7 +16414,7 @@ button.swiper-pagination-bullet {
 
 @media (min-width: 1200px) {
 	.desktop .rd-navbar-absolute .swiper-slide-caption {
-		padding-top: 370px;
+		/*padding-top: 370px;*/
 		padding-bottom: 200px;
 	}
 }
@@ -20799,9 +20811,9 @@ h3+.card-custom-group-wrap {
 }
 .testi .testimonial .description{
     padding: 20px 22px;
-    background-image: linear-gradient(134deg, rgb(29,169,255) 0%, rgb(77,0,128) 50%, rgb(19,0,95) 100%);
+    /* background-image: linear-gradient(134deg, rgb(29,169,255) 0%, rgb(77,0,128) 50%, rgb(19,0,95) 100%); */
     font-size: 15px;
-    color: #fff;
+    color: gray;
     line-height: 25px;
     margin: 0;
 	position: relative;
@@ -20853,19 +20865,17 @@ h3+.card-custom-group-wrap {
 	right: 0;	
   }
   .b1 {
-	width: 200px;
+	max-width: 350px;
 	height: 200px;
-	margin: auto;
-	background: url('../images/tel.jpg') no-repeat 100% / 100% rgba(0, 0, 0, .1);
-	/*background: url('/images/tel.jpg') no-repeat 50% / 70% rgba(0, 0, 0, .1);*/
+	margin: auto;	
 	color: #fd4040;
-	box-shadow: inset 0 0 0 1px lightgray;
-	position: relative;
-   left: -10%;
-   top: 50px;
+	/* box-shadow: inset 0 0 0 1px lightgray; */
+	position: relative;  
+   /* top: 50px; */
+   padding-top: 75px;
   }
   
-  .b1::before, .b1::after {
+  /* .b1::before, .b1::after {
 	content: '';
 	z-index: 1;
 	margin: -5%;
@@ -20874,11 +20884,12 @@ h3+.card-custom-group-wrap {
   }
   .b1::before {
 	animation-delay: -4s;
-  }
-  .b1:hover::after, .b1:hover::before {
+  } */
+  /* .b1:hover::after, .b1:hover::before {
 	background-color: rgba(255, 0, 0, .3);
-  }
-  @keyframes clipMe {
+  } */
+  
+  /* @keyframes clipMe {
 	0%, 100% {
 	  clip: rect(0px, 220px, 2px, 0px);
 	}
@@ -20891,14 +20902,24 @@ h3+.card-custom-group-wrap {
 	75% {
 	  clip: rect(0px, 220px, 220px, 218px);
 	}
-  }
+  } */
+
+.b1 img {
+	width: auto;
+	height: 300px;
+}
+.b1 .b1_foto_2 {
+display: none;
+
+}
+
+
   .b2, .b2::before, .b2::after {
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
-	right: 0;
-	
+	right: 0;	
   }
   .b2 {
 	width: 200px;
@@ -20909,11 +20930,8 @@ h3+.card-custom-group-wrap {
 	color: #fd4040;
 	box-shadow: inset 0 0 0 1px lightgray;
 	position: relative;
-   left: 10%;
-  
-   
-  }
-  
+   left: 10%;   
+  }  
   .b2::before, .b2::after {
 	content: '';
 	z-index: 1;
@@ -20942,7 +20960,7 @@ h3+.card-custom-group-wrap {
 	}
   }
   
-  @media (max-width: 767px) {
+  /* @media (max-width: 767px) {
 	  .b1 , .b2 {
 		  left: 0;
 	  }
@@ -20956,13 +20974,13 @@ h3+.card-custom-group-wrap {
 		position: relative;
 	}
 	.desktop .rd-navbar-absolute .swiper-slide-caption {
-		/* padding-top: 170px; */
+	 
 		position: relative;
 		top: -50px;
-		/* padding-right: 0px; */
+	 
 		margin-right: 15px;
 	}	
-  }
+  } */
 
 
  
@@ -21002,8 +21020,20 @@ h3+.card-custom-group-wrap {
 	  }
   }
   
-
- 
+  @media (min-width: 768px) {
+	  .up_brand {
+		  width: 60%;
+		  position: relative;
+		  top: 10px;
+	  }
+  }
+  @media (max-width: 767px) {
+	.up_brand {
+		width: 60%;
+		position: relative;
+		top: 10px;
+	}
+}
   .modal {
     position: fixed;
     right: 0;
